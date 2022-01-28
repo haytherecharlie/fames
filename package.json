@@ -1,0 +1,13 @@
+{
+	"name": "femas",
+	"version": "1.0.0",
+	"description": "Front End Micro Architecture Service",
+	"author": "Charlie Hay",
+	"license": "UNLICENSED",
+	"scripts": {
+		"build:all": "cd navbar && npm run build:spa & cd app1 && npm run build:spa & cd app2 && npm run build:spa",
+		"serve:all": "cd root-html-file && npm run serve & cd navbar && npm run serve:spa & cd app1 && npm run serve:spa & cd app2 && npm run serve:spa",
+		"start:all": "cd root-html-file && npm start & cd navbar && npm start & cd app1 && npm start & cd app2 && npm start",
+		"setup": "cd root-html-file && npm ci & cd navbar && npm ci & cd app1 && npm ci & cd app2 && npm ci"
+	}
+}
